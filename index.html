@@ -6,150 +6,252 @@
     <title>Rajat Mehrotra | Author & Corporate Leader</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f1f5f9;
         }
         h1, h2, h3, .font-serif {
             font-family: 'Playfair Display', serif;
         }
+        .hero-bestseller-bg {
+            background: linear-gradient(135deg, #030712 0%, #0f172a 50%, #1e1b4b 100%);
+            position: relative;
+        }
+        .gold-glow-badge {
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.25) 0%, rgba(245, 158, 11, 0.4) 100%);
+            border: 1px solid rgba(245, 158, 11, 0.7);
+            box-shadow: 0 0 35px rgba(245, 158, 11, 0.35);
+        }
+        .bestseller-card {
+            background: #ffffff;
+            border: 1px solid rgba(226, 232, 240, 0.9);
+            box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.07);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .bestseller-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 30px 60px -15px rgba(245, 158, 11, 0.2);
+            border-color: rgba(245, 158, 11, 0.6);
+        }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+<body class="text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="font-serif text-2xl font-bold tracking-tight text-slate-900">Rajat Mehrotra</a>
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
-                <a href="#about" class="hover:text-slate-900 transition-colors">About</a>
-                <a href="#motto" class="hover:text-slate-900 transition-colors">Motto</a>
-                <a href="#achievements" class="hover:text-slate-900 transition-colors">Achievements</a>
-                <a href="#book" class="hover:text-slate-900 transition-colors">Published Work</a>
-                <a href="#contact" class="hover:text-slate-900 transition-colors">Get in Touch</a>
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl font-bold tracking-tight text-slate-900 flex items-center gap-2.5">
+                <span class="w-3 h-3 rounded-full bg-amber-600 shadow-md shadow-amber-500/50"></span>
+                Rajat Mehrotra
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                <a href="#about" class="hover:text-amber-700 transition-colors">About</a>
+                <a href="#motto" class="hover:text-amber-700 transition-colors">Motto</a>
+                <a href="#media" class="hover:text-amber-700 transition-colors">Media & Podcast</a>
+                <a href="#achievements" class="hover:text-amber-700 transition-colors">Achievements</a>
+                <a href="#book" class="hover:text-amber-700 transition-colors">Published Work</a>
+                <a href="#contact" class="hover:text-amber-700 transition-colors">Let's Connect</a>
             </nav>
-            <a href="#book" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-slate-800 transition-all shadow-sm">Explore Book</a>
+            <a href="#book" class="bg-amber-600 text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-amber-700 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                <span>Explore Book</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="py-20 md:py-28 bg-white border-b border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="inline-block text-xs font-semibold tracking-widest uppercase bg-amber-50 text-amber-800 px-3 py-1 rounded-full border border-amber-200/50">Author & Speaker</span>
-                <h1 class="font-serif text-4xl md:text-6xl font-bold text-slate-900 leading-[1.1]">
-                    "Sometimes the heart must pause to teach us how to truly love."
-                </h1>
-                <p class="text-lg text-slate-600 font-light leading-relaxed">
-                    Corporate leader, speaker, lifelong learner, and storyteller navigating the intersections of human resilience and emotional awakening.
-                </p>
-                <div class="flex items-center space-x-4 pt-4">
-                    <a href="#book" class="bg-slate-900 text-white px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all shadow-md">Discover The Book</a>
-                    <a href="#about" class="text-sm font-semibold text-slate-900 hover:text-amber-700 transition-colors flex items-center space-x-2"><span>Read Bio</span> &rarr;</a>
-                </div>
+    <!-- Hero Header -->
+    <section class="hero-bestseller-bg text-white py-24 md:py-32 relative text-center">
+        <div class="max-w-7xl mx-auto px-6 space-y-6 relative z-10">
+            <div class="inline-flex items-center gap-2.5 px-6 py-2 rounded-full gold-glow-badge text-amber-200 text-xs font-extrabold uppercase tracking-widest">
+                <i class="fa-solid fa-award text-amber-400 text-sm"></i> INTERNATIONAL BESTSELLING AUTHOR SHOWCASE
             </div>
-            <div class="relative flex justify-center">
-                <div class="w-full max-w-md bg-slate-100 rounded-2xl overflow-hidden shadow-xl border border-slate-200/60">
-                    <img src="Face.jpg" alt="Rajat Mehrotra" class="w-full h-auto object-cover aspect-[4/5]">
+            <h1 class="font-serif text-5xl md:text-7xl font-black tracking-tight text-white drop-shadow-lg">Rajat Mehrotra</h1>
+            <p class="text-slate-300 max-w-2xl mx-auto text-base md:text-xl font-light tracking-wide">
+                Corporate Leader • Author • Speaker • Lifelong Storyteller Shaping Perspectives
+            </p>
+        </div>
+    </section>
+
+    <!-- Floating Main Showcase Section -->
+    <section class="relative -mt-16 z-20 pb-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="bestseller-card rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+                <div class="md:col-span-7 space-y-6">
+                    <span class="inline-flex items-center gap-2 text-xs font-bold tracking-widest uppercase bg-amber-50 text-amber-900 px-4 py-1.5 rounded-full border border-amber-300 shadow-sm">
+                        <i class="fa-solid fa-quote-left text-amber-600"></i> Featured Quote
+                    </span>
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-slate-900 leading-[1.15]">
+                        "Sometimes the heart must pause to teach us how to truly love."
+                    </h2>
+                    <p class="text-slate-600 text-lg font-light leading-relaxed">
+                        Navigating the intersections of human resilience, emotional awakening, and corporate leadership with profound storytelling.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-4 pt-4">
+                        <a href="#book" class="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-4 rounded-full text-sm transition-all shadow-xl hover:shadow-2xl flex items-center gap-2.5">
+                            <span>Discover The Book</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                        <a href="#about" class="bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold px-7 py-4 rounded-full text-sm transition-all border border-slate-300">
+                            Read Full Bio
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:col-span-5 flex justify-center">
+                    <div class="w-full max-w-sm bg-slate-100 rounded-3xl overflow-hidden shadow-2xl border-2 border-amber-500/40 p-3 transform hover:scale-105 transition-transform duration-500">
+                        <img src="Face.jpg" alt="Rajat Mehrotra" class="w-full h-auto object-cover aspect-[4/5] rounded-2xl shadow-inner">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-slate-50/50">
-        <div class="max-w-4xl mx-auto px-6 space-y-8">
-            <div class="text-center space-y-3">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-slate-900">About the Author</h2>
-                <div class="w-12 h-1 bg-amber-600 mx-auto rounded-full"></div>
+    <section id="about" class="py-24 bg-slate-200/50 border-t border-slate-300/60">
+        <div class="max-w-5xl mx-auto px-6 space-y-12">
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-purple-100 text-purple-800 border border-purple-300 px-5 py-2 rounded-full text-xs font-bold shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-graduation-cap"></i> Corporate Leader
+                </span>
+                <span class="bg-blue-100 text-blue-800 border border-blue-300 px-5 py-2 rounded-full text-xs font-bold shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Published Author
+                </span>
+                <span class="bg-emerald-100 text-emerald-800 border border-emerald-300 px-5 py-2 rounded-full text-xs font-bold shadow-sm flex items-center gap-2">
+                    <i class="fa-solid fa-microphone"></i> Keynote Speaker
+                </span>
             </div>
-            <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-100 space-y-6 text-slate-700 leading-relaxed text-lg font-light">
-                <p>
-                    Rajat Mehrotra is a corporate leader, author, speaker, and above all, a lifelong learner. With years of experience navigating the corporate world, he has come to believe that some of life's most meaningful lessons are learned not in boardrooms, but through relationships, setbacks, personal reflection, and the courage to begin again.
-                </p>
-                <p>
-                    Deeply committed to his family, Rajat continues to discover what it means to grow as a father, a husband, and an individual. A self-proclaimed "survival cook," he finds unexpected parallels between managing a kitchen and leading in the corporate world. Both demand adaptability, patience, problem-solving, and the ability to find flavor even in the most unlikely ingredients.
-                </p>
+
+            <div class="text-center space-y-3">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-slate-900">About the Author</h2>
+                <div class="w-16 h-1.5 bg-amber-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="bestseller-card rounded-3xl p-8 md:p-14 grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-4 flex justify-center">
+                    <img src="Standing.jpeg" alt="Rajat Mehrotra Standing" class="rounded-2xl shadow-xl object-cover aspect-[3/4] w-full max-w-xs border-2 border-slate-200">
+                </div>
+                <div class="md:col-span-8 space-y-6 text-slate-700 leading-relaxed text-lg font-light">
+                    <p>
+                        <strong class="text-slate-900 font-semibold">Rajat Mehrotra</strong> is a corporate leader, author, speaker, and above all, a lifelong learner. With years of experience navigating the corporate world, he has come to believe that some of life's most meaningful lessons are learned not in boardrooms, but through relationships, setbacks, personal reflection, and the courage to begin again.
+                    </p>
+                    <p>
+                        Deeply committed to his family, Rajat continues to discover what it means to grow as a father, a husband, and an individual. A self-proclaimed "survival cook," he finds unexpected parallels between managing a kitchen and leading in the corporate world.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Motto Section -->
-    <section id="motto" class="py-20 bg-slate-900 text-white">
+    <section id="motto" class="py-24 bg-slate-900 text-white relative">
         <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
-            <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Philosophy & Vision</span>
-            <h2 class="font-serif text-3xl md:text-5xl font-bold leading-tight">
+            <span class="text-amber-400 text-xs font-bold tracking-widest uppercase bg-amber-500/10 px-4 py-1.5 rounded-full border border-amber-500/30">Philosophy & Vision</span>
+            <h2 class="font-serif text-3xl md:text-5xl font-bold leading-tight text-amber-100">
                 "Writing is the art of pausing time to examine the heartbeat of human experience."
             </h2>
-            <p class="text-slate-400 max-w-2xl mx-auto text-base">
+            <p class="text-slate-400 max-w-2xl mx-auto text-base md:text-lg font-light">
                 Through books, keynote speaking, and thoughtful reflections, Rajat aims to spark conversations around vulnerability, emotional healing, and purposeful leadership.
             </p>
         </div>
     </section>
 
-    <!-- Achievements & Recognition Section -->
-    <section id="achievements" class="py-20 bg-white">
+    <!-- Media, Press & Podcast Section -->
+    <section id="media" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-6 space-y-12">
             <div class="text-center space-y-3">
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-slate-900">Achievements & Recognition</h2>
-                <div class="w-12 h-1 bg-amber-600 mx-auto rounded-full"></div>
-                <p class="text-slate-600 max-w-xl mx-auto">Milestones, media features, and literary recognitions along the journey.</p>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-slate-900">Media, Interviews & Press</h2>
+                <div class="w-16 h-1.5 bg-amber-600 mx-auto rounded-full"></div>
+                <p class="text-slate-600 max-w-xl mx-auto">Latest podcast episodes, press reviews, and featured media coverage.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 1. Podcast Features -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4 hover:shadow-md transition-all">
-                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center font-bold justify-center">01</div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                <!-- Podcast Embed -->
+                <div class="bestseller-card rounded-3xl p-6 md:p-8 space-y-4 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-bold text-amber-900 bg-amber-100 px-3.5 py-1 rounded-md border border-amber-300 uppercase tracking-wider">Featured Podcast</span>
+                        <h3 class="font-serif text-2xl font-bold text-slate-900 mt-3">College se Corporate Tak</h3>
+                        <p class="text-sm text-slate-600 mt-1">Watch Rajat Mehrotra sharing insights on corporate life, leadership, and storytelling on <em>Knowing More with Ddeepti Ggaba</em>[cite: 14].</p>
+                    </div>
+                    <div class="aspect-video rounded-2xl overflow-hidden shadow-lg mt-4 border border-slate-300">
+                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/p61rOl51xVc" title="Rajat Mehrotra Podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Press Articles -->
+                <div class="space-y-6 flex flex-col justify-between">
+                    <div class="bestseller-card rounded-3xl p-6 md:p-8 space-y-3">
+                        <span class="text-xs font-semibold text-amber-900 bg-amber-100 px-3.5 py-1 rounded-md border border-amber-300">Press Review</span>
+                        <h4 class="font-serif text-xl font-bold text-slate-900">The Celebrity Times</h4>
+                        <p class="text-sm text-slate-600">In-depth book review and feature on <em>The Heart that Restarted</em>.</p>
+                        <a href="https://thecelebritytimes.in/2026/09/28/book-review-the-heart-that-restarted-by-rajat-mehrotra/?fbclid=PAdGRzdgUoXhRleHRuA2FlbQIxMABwZG9mAnNydGMGYXBwX2lkDzU2NzA2NzM0MzM1MjQyNwABpxkWT7-m1HHPkAwr8dIYRS6fMmiGquC6klvszRshGnZ26pyjcubaQqfdClpn_aem_JDVs9C8_O_nQVyIZr7FMVg" target="_blank" class="text-amber-700 hover:text-amber-900 text-sm font-bold inline-flex items-center gap-1.5 pt-2">
+                            <span>Read Full Article</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+
+                    <div class="bestseller-card rounded-3xl p-6 md:p-8 space-y-3">
+                        <span class="text-xs font-semibold text-amber-900 bg-amber-100 px-3.5 py-1 rounded-md border border-amber-300">Media Feature</span>
+                        <h4 class="font-serif text-xl font-bold text-slate-900">Hindustan Chronicles</h4>
+                        <p class="text-sm text-slate-600">Leading with Purpose: Mentoring with Impact feature article.</p>
+                        <a href="https://hindustanchronicles.in/rajat-mehrotra-leading-with-purpose-mentoring-with-impact/" target="_blank" class="text-amber-700 hover:text-amber-900 text-sm font-bold inline-flex items-center gap-1.5 pt-2">
+                            <span>Read Full Article</span> <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-24 bg-slate-200/50 border-t border-slate-300/60">
+        <div class="max-w-6xl mx-auto px-6 space-y-12">
+            <div class="text-center space-y-3">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-slate-900">Achievements & Recognition</h2>
+                <div class="w-16 h-1.5 bg-amber-600 mx-auto rounded-full"></div>
+                <p class="text-slate-600 max-w-xl mx-auto">Milestones, awards, and key literary honors.</p>
+            </div>
+
+            <!-- Image Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bestseller-card rounded-3xl overflow-hidden p-4">
+                    <img src="Both.jpeg" alt="Award Presentation" class="w-full h-64 object-cover rounded-2xl shadow-md">
+                    <p class="text-center text-sm font-bold text-slate-800 mt-4">Award & Recognition Ceremony</p>
+                </div>
+                <div class="bestseller-card rounded-3xl overflow-hidden p-4">
+                    <img src="Certificate.jpeg" alt="International Author Award" class="w-full h-64 object-cover rounded-2xl shadow-md">
+                    <p class="text-center text-sm font-bold text-slate-800 mt-4">International Author Award Winner</p>
+                </div>
+                <div class="bestseller-card rounded-3xl overflow-hidden p-4">
+                    <img src="Pic.jpeg" alt="Corporate & Literary Event" class="w-full h-64 object-cover rounded-2xl shadow-md">
+                    <p class="text-center text-sm font-bold text-slate-800 mt-4">Literary Meet & Events</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-6">
+                <div class="bestseller-card rounded-3xl p-8 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-900 flex items-center font-bold justify-center text-lg border border-amber-300">01</div>
                     <h3 class="font-serif text-xl font-bold text-slate-900">Podcast Features</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Featured on podcasts discussing his literary journey.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Shared insights into his writing, inspirations, and experiences.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Connected with audiences through conversations about his work.</li>
+                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Featured on popular podcasts discussing corporate-to-creative transitions.</li>
+                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Shared deep insights into writing and human resilience.</li>
                     </ul>
                 </div>
 
-                <!-- 2. Literary Magazine Features -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4 hover:shadow-md transition-all">
-                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center font-bold justify-center">02</div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900">Literary Magazine Features</h3>
-                    <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Featured in literary magazines highlighting his work.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Gained visibility among readers and literature enthusiasts.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Earned recognition for his contribution to the literary space.</li>
-                    </ul>
-                </div>
-
-                <!-- 3. Media & Article Features -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4 hover:shadow-md transition-all">
-                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center font-bold justify-center">03</div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900">Media & Article Features</h3>
-                    <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Featured in articles published by Celebrity Times.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Recognised through a feature on TheAkshReview.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Expanded his public presence through literary media coverage.</li>
-                    </ul>
-                </div>
-
-                <!-- 4. Author of the Month -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4 hover:shadow-md transition-all">
-                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center font-bold justify-center">04</div>
+                <div class="bestseller-card rounded-3xl p-8 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-900 flex items-center font-bold justify-center text-lg border border-amber-300">02</div>
                     <h3 class="font-serif text-xl font-bold text-slate-900">Author of the Month</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Won the prestigious Author of the Month recognition by TheAkshReview.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Celebrated for his literary journey and achievements.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Received a dedicated platform to showcase his author profile.</li>
+                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Won prestigious Author of the Month recognition by TheAkshReview.</li>
+                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Celebrated for his debut literary work and profound storytelling.</li>
                     </ul>
                 </div>
 
-                <!-- 5. International Author Award -->
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4 hover:shadow-md transition-all md:col-span-2 lg:col-span-1">
-                    <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-800 flex items-center font-bold justify-center">05</div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900">International Author Award</h3>
+                <div class="bestseller-card rounded-3xl p-8 space-y-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-900 flex items-center font-bold justify-center text-lg border border-amber-300">03</div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900">International Award</h3>
                     <ul class="space-y-2 text-sm text-slate-600">
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Won the International Author Award.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Achieved an important milestone in his writing journey.</li>
-                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Added international recognition to his growing list of accomplishments.</li>
+                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Won International Author Award for excellence in literature.</li>
+                        <li class="flex items-start"><span class="text-amber-600 mr-2">•</span>Added global recognition to his growing accomplishments.</li>
                     </ul>
                 </div>
             </div>
@@ -157,32 +259,41 @@
     </section>
 
     <!-- Published Work Section -->
-    <section id="book" class="py-20 bg-slate-50/50">
+    <section id="book" class="py-24 bg-white">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div class="flex justify-center">
-                <div class="w-full max-w-sm bg-white rounded-2xl overflow-hidden shadow-2xl border border-slate-200/60 p-4">
-                    <img src="Front.jpg" alt="The Heart that Restarted Book Cover" class="w-full h-auto object-cover rounded-xl">
+                <div class="w-full max-w-sm bestseller-card rounded-3xl overflow-hidden p-4">
+                    <img src="Front.jpg" alt="The Heart that Restarted Book Cover" class="w-full h-auto object-cover rounded-2xl shadow-xl">
                 </div>
             </div>
             <div class="space-y-6">
-                <span class="text-xs font-semibold tracking-widest uppercase bg-amber-50 text-amber-800 px-3 py-1 rounded-full border border-amber-200/50">Debut Novel</span>
-                <h2 class="font-serif text-3xl md:text-4xl font-bold text-slate-900">The Heart that Restarted</h2>
-                <p class="text-slate-600 leading-relaxed font-light">
+                <span class="text-xs font-bold tracking-widest uppercase bg-amber-50 text-amber-900 px-4 py-1.5 rounded-full border border-amber-300 shadow-sm">Debut Novel</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-slate-900">The Heart that Restarted</h2>
+                <p class="text-slate-600 leading-relaxed font-light text-lg">
                     A poignant journey of love, loss, and redemption. Follow the intertwined lives of Kabir and Rhea as they navigate the fragile boundaries of second chances, emotional healing, and the unspoken promises of the heart.
                 </p>
                 <div class="pt-4">
-                    <a href="https://www.amazon.in" target="_blank" class="inline-block bg-amber-600 text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-amber-700 transition-all shadow-md">Get Your Copy on Amazon</a>
+                    <a href="https://www.amazon.in/Heart-that-Restarted-Sometimes-Pause/dp/B0H4W3CYQN/ref=sr_1_1?crid=2BTP13HCJD347&dib=eyJ2Ijoybms5.fxJAJ4qyURJDwmELx3lyXg.FNK-1O...&keywords=rajat+mehrotra+the+heart+that+restarted&qid=1729400000&sprefix=rajat+mehrotra%2Caps%2C200&sr=8-1" target="_blank" class="inline-flex items-center gap-3 bg-amber-600 text-white px-8 py-4 rounded-full text-base font-bold hover:bg-amber-700 transition-all shadow-xl hover:shadow-2xl">
+                        <i class="fa-brands fa-amazon text-xl"></i>
+                        <span>Buy on Amazon</span>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-6xl mx-auto px-6 space-y-4">
-            <h3 class="font-serif text-2xl text-white font-bold">Rajat Mehrotra</h3>
-            <p class="text-sm">Connecting through words, reflections, and shared experiences.</p>
-            <p class="text-xs text-slate-600 pt-6">&copy; 2026 Rajat Mehrotra. All rights reserved.</p>
+    <footer id="contact" class="bg-slate-900 text-slate-400 py-16 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 text-center space-y-6">
+            <h3 class="font-serif text-3xl text-white font-bold">Rajat Mehrotra</h3>
+            <p class="text-slate-400 text-sm max-w-md mx-auto">Connecting through words, reflections, and shared experiences.</p>
+            <div class="pt-2">
+                <a href="https://www.linkedin.com/in/rajatmehrotra?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" class="inline-flex items-center gap-2 text-white bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-full text-sm font-semibold transition-all border border-slate-700 shadow-sm">
+                    <i class="fa-brands fa-linkedin text-amber-500 text-xl"></i>
+                    <span>Connect on LinkedIn</span>
+                </a>
+            </div>
+            <p class="text-xs text-slate-600 pt-8">&copy; 2026 Rajat Mehrotra. All rights reserved.</p>
         </div>
     </footer>
 
