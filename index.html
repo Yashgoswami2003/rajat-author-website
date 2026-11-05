@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rajat Mehrotra | Author & Corporate Leader</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Rajat Mehrotra | Author, Corporate Leader & Keynote Speaker</title>
+    <meta name="description" content="Official website of Rajat Mehrotra, international bestselling author and corporate leader. Explore books like The Heart That Restarted, podcasts, and media features.">
+    <meta name="keywords" content="Rajat Mehrotra, The Heart That Restarted, Author, Corporate Speaker, Bestselling Author, Leadership">
+    <link rel="canonical" href="https://rajatmehrotra.com/">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Rajat Mehrotra | Author & Corporate Leader">
+    <meta property="og:description" content="Explore books, quotes, podcasts, and insights on human resilience, emotional awakening, and leadership by Rajat Mehrotra.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rajatmehrotra.com/">
+    <meta property="og:image" content="https://rajatmehrotra.com/Front.jpg">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -101,7 +114,7 @@
 
                 <div class="md:col-span-5 flex justify-center">
                     <div class="w-full max-w-[280px] sm:max-w-sm bg-slate-100 rounded-3xl overflow-hidden shadow-2xl border-2 border-amber-500/40 p-3">
-                        <img src="Face.jpg" alt="Rajat Mehrotra" class="w-full h-auto object-cover aspect-[4/5] rounded-2xl shadow-inner">
+                        <img src="Face.jpg" alt="Rajat Mehrotra Author Portrait" class="w-full h-auto object-cover aspect-[4/5] rounded-2xl shadow-inner">
                     </div>
                 </div>
             </div>
@@ -184,7 +197,6 @@
 
                 <!-- Press Articles -->
                 <div class="space-y-6 flex flex-col justify-between">
-                    <!-- Mid-Day Feature Card Added Here -->
                     <div class="bestseller-card rounded-3xl p-6 sm:p-8 space-y-3 border-2 border-amber-500/40">
                         <span class="text-xs font-semibold text-amber-900 bg-amber-100 px-3.5 py-1 rounded-md border border-amber-300">Featured in Mid-Day</span>
                         <h4 class="font-serif text-lg sm:text-xl font-bold text-slate-900">8 Must-Read Books of 2026</h4>
@@ -225,7 +237,6 @@
                 <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base">Milestones, awards, and key literary honors.</p>
             </div>
 
-            <!-- Existing 3 Award Cards -->
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 <div class="bestseller-card rounded-3xl overflow-hidden p-4 bg-slate-900 flex flex-col items-center justify-between">
                     <div class="w-full flex items-center justify-center py-2">
@@ -287,7 +298,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
-                    <!-- Avinya -->
                     <div class="bestseller-card rounded-3xl overflow-hidden p-4 bg-slate-900 flex flex-col items-center justify-between">
                         <div class="w-full flex items-center justify-center py-2">
                             <img src="Avinya.jpeg" alt="Avinya Guest Speaker" class="max-h-[380px] w-auto max-w-full object-contain rounded-2xl">
@@ -298,7 +308,6 @@
                         </div>
                     </div>
 
-                    <!-- Lead Speaker -->
                     <div class="bestseller-card rounded-3xl overflow-hidden p-4 bg-slate-900 flex flex-col items-center justify-between">
                         <div class="w-full flex items-center justify-center py-2">
                             <img src="Lead Speaker.jpeg" alt="Lead Speaker Session" class="max-h-[380px] w-auto max-w-full object-contain rounded-2xl">
@@ -309,7 +318,6 @@
                         </div>
                     </div>
 
-                    <!-- Leadership Talk -->
                     <div class="bestseller-card rounded-3xl overflow-hidden p-4 bg-slate-900 flex flex-col items-center justify-between">
                         <div class="w-full flex items-center justify-center py-2">
                             <img src="Leadership Talk.jpeg" alt="Leadership Talk" class="max-h-[380px] w-auto max-w-full object-contain rounded-2xl">
@@ -367,6 +375,25 @@
             <p class="text-xs text-slate-600 pt-8">&copy; 2026 Rajat Mehrotra. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Security & Privacy Script (Right-Click & Inspect Block) -->
+    <script>
+        // Disable Right-Click Context Menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Disable Inspect Element Keyboard Shortcuts (F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C, Ctrl+U)
+        document.addEventListener('keydown', function(e) {
+            if (
+                e.key === 'F12' ||
+                (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J' || e.key === 'C' || e.key === 'i' || e.key === 'j' || e.key === 'c')) ||
+                (e.ctrlKey && (e.key === 'U' || e.key === 'u'))
+            ) {
+                e.preventDefault();
+            }
+        });
+    </script>
 
 </body>
 </html>
